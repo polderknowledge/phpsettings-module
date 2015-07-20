@@ -1,0 +1,27 @@
+{
+    "name": "polderknowledge/phpsettings-module",
+    "require": {
+        "php": ">=5.5.0",
+        "zendframework/zend-modulemanager": "*",
+        "zendframework/zend-mvc": "*"
+    },
+    "require-dev": {
+        "polderknowledge/build-tools": "dev-master@dev"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://developers.polderknowledge.nl/packages"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PolderKnowledge\\PhpSettingsModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PolderKnowledge\\": "tests/"
+        }
+    }
+}
