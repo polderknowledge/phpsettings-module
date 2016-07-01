@@ -26,13 +26,13 @@ class Module
      */
     public function getAutoloaderConfig()
     {
-        return array(
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
+        return [
+            'Zend\Loader\StandardAutoloader' => [
+                'namespaces' => [
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 
     /**
@@ -56,7 +56,7 @@ class Module
         $sharedManager->attach(
             Application::class,
             MvcEvent::EVENT_BOOTSTRAP,
-            array(new PhpSettings, 'onBootstrap'),
+            [new PhpSettings, 'onBootstrap'],
             PHP_INT_MAX
         );
     }
