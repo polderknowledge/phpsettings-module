@@ -9,10 +9,10 @@
 
 namespace PolderKnowledge\PhpSettingsModule;
 
-return array(
-    'phpSettings' => array(
-        'error_reporting' => 0,
+return [
+    'phpSettings' => [
+        // defaults for production environment
         'display_errors' => 0,
         'display_startup_errors' => 0,
-    ),
-);
+    ],
+];
