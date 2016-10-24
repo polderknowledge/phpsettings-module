@@ -1,10 +1,10 @@
 <?php
 /**
- * Polder Knowledge / PhpSettingsModule (http://polderknowledge.nl)
+ * Polder Knowledge / PhpSettingsModule (https://polderknowledge.com)
  *
- * @link http://developers.polderknowledge.nl/gitlab/polderknowledge/phpsettings-module for the canonical source repository
- * @copyright Copyright (c) 2015-2015 Polder Knowledge (http://www.polderknowledge.nl)
- * @license http://polderknowledge.nl/license/proprietary proprietary
+ * @link https://github.com/polderknowledge/phpsettings-module for the canonical source repository
+ * @copyright Copyright (c) 2002-2016 Polder Knowledge (https://www.polderknowledge.com)
+ * @license https://github.com/polderknowledge/phpsettings-module/blob/master/LICENSE.md MIT
  */
 
 namespace PolderKnowledge\PhpSettingsModule;
