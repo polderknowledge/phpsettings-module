@@ -1,19 +1,28 @@
 {
     "name": "polderknowledge/phpsettings-module",
-    "require": {
-        "php": ">=5.5.0",
-        "zendframework/zend-modulemanager": "*",
-        "zendframework/zend-mvc": "*"
-    },
-    "require-dev": {
-        "polderknowledge/build-tools": "dev-master@dev"
-    },
-    "repositories": [
+    "type": "library",
+    "description": "A Zend Framework module to quickly and easily set PHP settings.",
+    "keywords": [
+        "polderknowledge",
+        "phpsettings-module",
+        "settings",
+        "ini",
+        "config"
+    ],
+    "license": "MIT",
+    "authors": [
         {
-            "type": "composer",
-            "url": "http://developers.polderknowledge.nl/packages"
+            "name": "Polder Knowledge",
+            "homepage": "https://polderknowledge.com"
         }
     ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
     "autoload": {
         "psr-4": {
             "PolderKnowledge\\PhpSettingsModule\\": "src/"
@@ -23,5 +32,18 @@
         "psr-4": {
             "PolderKnowledge\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
