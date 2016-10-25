@@ -17,6 +17,9 @@ use Zend\ModuleManager\ModuleManager;
 
 class ModuleTest extends PHPUnit_Framework_TestCase
 {
+    /**
+     * @covers PolderKnowledge\PhpSettingsModule\Module::getAutoloaderConfig
+     */
     public function testGetAutoloaderConfig()
     {
         // Arrange
@@ -30,6 +33,9 @@ class ModuleTest extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('Zend\\Loader\\StandardAutoloader', $result);
     }
 
+    /**
+     * @covers PolderKnowledge\PhpSettingsModule\Module::getConfig
+     */
     public function testGetConfig()
     {
         // Arrange
@@ -42,6 +48,9 @@ class ModuleTest extends PHPUnit_Framework_TestCase
         $this->assertInternalType('array', $result);
     }
 
+    /**
+     * @covers PolderKnowledge\PhpSettingsModule\Module::init
+     */
     public function testInit()
     {
         // Arrange
