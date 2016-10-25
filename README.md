@@ -40,6 +40,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 If you discover any security related issues, please report them via [HackerOne](https://hackerone.com/polderknowledge) 
 instead of using the issue tracker or e-mail.
 
+## Community
+
+We have an IRC channel where you can find us every now and then. We're on the Freenode network in the
+channel #polderknowledge.
+
 ## Credits
 
 - [Polder Knowledge][link-author]
