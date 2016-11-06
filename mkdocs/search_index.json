@@ -1,0 +1,74 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "phpsettings-module\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Zend Framework module that sets up an event listener in order to set PHP settings in an application.\n\n\nInstall\n\n\nVia Composer\n\n\n$ composer require polderknowledge/phpsettings-module\n\n\n\n\nUsage\n\n\nPlease read the documentation for this package for a quick setup.\n\n\nChange log\n\n\nPlease see \nCHANGELOG\n for more information what has changed recently.\n\n\nTesting\n\n\n$ composer test\n\n\n\n\nContributing\n\n\nPlease see \nCONTRIBUTING\n and \nCONDUCT\n for details.\n\n\nSecurity\n\n\nIf you discover any security related issues, please report them via \nHackerOne\n \ninstead of using the issue tracker or e-mail.\n\n\nCommunity\n\n\nWe have an IRC channel where you can find us every now and then. We're on the Freenode network in the\nchannel #polderknowledge.\n\n\nCredits\n\n\n\n\nPolder Knowledge\n\n\nAll Contributors\n\n\n\n\nLicense\n\n\nThe MIT License (MIT). Please see \nLicense File\n for more information.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#phpsettings-module", 
+            "text": "A Zend Framework module that sets up an event listener in order to set PHP settings in an application.", 
+            "title": "phpsettings-module"
+        }, 
+        {
+            "location": "/#install", 
+            "text": "Via Composer  $ composer require polderknowledge/phpsettings-module", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/#usage", 
+            "text": "Please read the documentation for this package for a quick setup.", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/#change-log", 
+            "text": "Please see  CHANGELOG  for more information what has changed recently.", 
+            "title": "Change log"
+        }, 
+        {
+            "location": "/#testing", 
+            "text": "$ composer test", 
+            "title": "Testing"
+        }, 
+        {
+            "location": "/#contributing", 
+            "text": "Please see  CONTRIBUTING  and  CONDUCT  for details.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/#security", 
+            "text": "If you discover any security related issues, please report them via  HackerOne  \ninstead of using the issue tracker or e-mail.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/#community", 
+            "text": "We have an IRC channel where you can find us every now and then. We're on the Freenode network in the\nchannel #polderknowledge.", 
+            "title": "Community"
+        }, 
+        {
+            "location": "/#credits", 
+            "text": "Polder Knowledge  All Contributors", 
+            "title": "Credits"
+        }, 
+        {
+            "location": "/#license", 
+            "text": "The MIT License (MIT). Please see  License File  for more information.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/installation/", 
+            "text": "Installation\n\n\nInstall the module via composer.\n\n\ncomposer require polderknowledge/phpsettings-module\n\n\nNext add the module to your \napplication.config.php\n:\n\n\n?php\nreturn [\n    'modules' =\n [\n        'Application',\n        'PolderKnowledge\\\\PhpSettingsModule',\n    ],\n];\n\n\n\n\nConfiguration\n\n\nSimply add a file called \nphpsettings.global.php\n to your \nconfig/autoload\n directory with the following content:\n\n\n?php\nreturn [\n    'phpSettings' =\n [\n        'error_reporting' =\n 0,\n        'display_errors' =\n 0,\n        'display_startup_errors' =\n 0,\n    ],\n];\n\n\n\n\nThe \nphpSettings\n array is a key/value array where each key corresponds to a PHP INI setting. For a complete list of\nall available settings, take a look at the \nwebsite of PHP\n itself.", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#installation", 
+            "text": "Install the module via composer.  composer require polderknowledge/phpsettings-module  Next add the module to your  application.config.php :  ?php\nreturn [\n    'modules' =  [\n        'Application',\n        'PolderKnowledge\\\\PhpSettingsModule',\n    ],\n];", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#configuration", 
+            "text": "Simply add a file called  phpsettings.global.php  to your  config/autoload  directory with the following content:  ?php\nreturn [\n    'phpSettings' =  [\n        'error_reporting' =  0,\n        'display_errors' =  0,\n        'display_startup_errors' =  0,\n    ],\n];  The  phpSettings  array is a key/value array where each key corresponds to a PHP INI setting. For a complete list of\nall available settings, take a look at the  website of PHP  itself.", 
+            "title": "Configuration"
+        }
+    ]
+}
