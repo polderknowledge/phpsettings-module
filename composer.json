@@ -47,6 +47,8 @@
         }
     },
     "config": {
+        "optimize-autoloader": true,
+        "process-timeout": 5000,
         "sort-packages": true
     }
 }
